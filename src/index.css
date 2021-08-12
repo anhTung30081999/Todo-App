@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .placeholder-italic::placeholder{
+       font-style: italic;
+    }
+  }
+
+  input:checked + div {
+   @apply border-blue-500;
+ }
+ input:checked + div svg {
+   @apply block;
+ }
